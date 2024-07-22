@@ -30,6 +30,25 @@ h6 {
 p {
 	color: var(--textColor);
 }
+.button {
+	padding: 1em 2em;
+	border: none;
+	background-color: var(--primaryColor);
+	border-radius: 10px;
+}
+
+.bubble {
+	width: 175px;
+	height: 175px;
+	border-radius: 50%;
+	border: 8px solid var(--primaryColor);
+	position: absolute;
+	background-color: var(--bgColor);
+}
+
+.bubble-filled {
+	background-color: var(--primaryColor);
+}
 
 /* End global */
 
@@ -54,15 +73,72 @@ p {
 
 header .navbar .nav-link {
 	color: var(--textColor);
-	font-size: 1.2rem;
+	font-size: 1.2em;
 }
 
 .navbar-nav .nav-link.active {
 	color: var(--primaryColor);
 	font-weight: 700;
 }
-
+section {
+	margin-block: 3em;
+}
 /* End header */
+ 
+section.hero h1 {
+	font-size: 4em; 
+}
+
+section.hero .row > :nth-child(2) {
+	height: 250px;
+}
+section.hero .img {
+	position: relative;
+	width: 200px;
+	height: 200px;
+	top: 0;
+	right: -25%;
+	transform: translate(25%, 25%);
+}
+section.hero .img .bubble {
+	position: absolute;
+}
+section.hero .img .bubble:nth-child(1) {
+	top: -51px;
+	right: 85px;
+	z-index: 2;
+}
+section.hero .img .bubble:nth-child(2) {
+	top: -119px;
+	left: -122px;
+}
+section.hero .img .bubble:nth-child(3) {
+	top: 115px;
+	left: 30px;
+}
+
+section.hero img {
+	border-radius: 50%;
+	position: absolute;
+	z-index: 5;
+}
+@media (max-width: 768px) {
+	 section.hero .img { 
+		top: 100px; 
+	}
+}
+/* Start  Hero*/
+
+/* End Hero*/
 
 /* Start */
 /* End */
+
+@media (max-width: 576px) { 
+	body{
+		font-size: .7rem;
+	}
+	p{
+		font-size: 1.2em;
+	}
+ }
