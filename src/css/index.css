@@ -29,6 +29,7 @@ h6 {
 
 p {
 	color: var(--textColor);
+	font-size: 1.2em;
 }
 
 section {
@@ -163,9 +164,33 @@ section.hero img {
 	section.hero .img {
 		top: 100px;
 	}
+	section.hero .row > :nth-child(2) {
+		height: 450px;
+	}
 }
 
 /* End Hero*/
+
+/* Start About */
+
+section.about .aboutImage {
+	width: 100%;
+	aspect-ratio: 1/1;
+	border-radius: 20px;
+	border: 3px solid var(--primaryColor);
+}
+
+section.about .aboutImage img {
+	height: 100%;
+	width: 100%;
+	border-radius: inherit;
+}
+
+section.about p {
+	font-size: 1.5em;
+}
+
+/* End About */
 
 /* Start */
 /* End */
