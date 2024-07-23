@@ -30,6 +30,11 @@ h6 {
 p {
 	color: var(--textColor);
 }
+
+section {
+	margin-block: 3em;
+}
+
 .button {
 	padding: 1em 2em;
 	border: none;
@@ -48,6 +53,16 @@ p {
 
 .bubble-filled {
 	background-color: var(--primaryColor);
+}
+
+@media (max-width: 576px) {
+	body {
+		font-size: 0.7rem;
+	}
+
+	p {
+		font-size: 1.2em;
+	}
 }
 
 /* End global */
@@ -80,18 +95,19 @@ header .navbar .nav-link {
 	color: var(--primaryColor);
 	font-weight: 700;
 }
-section {
-	margin-block: 3em;
-}
+
 /* End header */
- 
+
+/* Start  Hero*/
+
 section.hero h1 {
-	font-size: 4em; 
+	font-size: 4em;
 }
 
 section.hero .row > :nth-child(2) {
 	height: 250px;
 }
+
 section.hero .img {
 	position: relative;
 	width: 200px;
@@ -100,18 +116,22 @@ section.hero .img {
 	right: -25%;
 	transform: translate(25%, 25%);
 }
+
 section.hero .img .bubble {
 	position: absolute;
 }
+
 section.hero .img .bubble:nth-child(1) {
 	top: -51px;
 	right: 85px;
 	z-index: 2;
 }
+
 section.hero .img .bubble:nth-child(2) {
 	top: -119px;
 	left: -122px;
 }
+
 section.hero .img .bubble:nth-child(3) {
 	top: 115px;
 	left: 30px;
@@ -122,23 +142,15 @@ section.hero img {
 	position: absolute;
 	z-index: 5;
 }
+
 @media (max-width: 768px) {
-	 section.hero .img { 
-		top: 100px; 
+	section.hero .img {
+		top: 100px;
 	}
 }
-/* Start  Hero*/
 
 /* End Hero*/
 
 /* Start */
 /* End */
 
-@media (max-width: 576px) { 
-	body{
-		font-size: .7rem;
-	}
-	p{
-		font-size: 1.2em;
-	}
- }
