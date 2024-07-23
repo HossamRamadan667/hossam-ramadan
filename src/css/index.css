@@ -55,14 +55,30 @@ section {
 	background-color: var(--primaryColor);
 }
 
-@media (max-width: 576px) {
-	body {
-		font-size: 0.7rem;
-	}
+.sectionTitle {
+	position: relative;
+	margin: 0 auto 3rem auto;
+	font-size: 3rem;
+	text-align: center;
+}
 
-	p {
-		font-size: 1.2em;
-	}
+.sectionTitle::after {
+	content: "";
+	width: 2em;
+	height: 8px;
+	background-color: var(--primaryColor);
+	border-radius: 50px;
+	position: absolute;
+	bottom: -10px;
+}
+
+.sectionTitle.center::after {
+	left: 50%;
+	transform: translate(-50%, 0%);
+}
+
+.sectionTitle.left::after {
+	left: 0%;
 }
 
 /* End global */
