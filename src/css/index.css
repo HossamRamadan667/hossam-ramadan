@@ -29,7 +29,6 @@ h6 {
 
 p {
 	color: var(--textColor);
-	font-size: 1.2em;
 }
 
 section {
@@ -191,6 +190,21 @@ section.about p {
 }
 
 /* End About */
+
+/* Start Services */
+
+section.services .service {
+	border-radius: 5px;
+	border: 5px solid var(--primaryColor);
+	padding: 20px;
+}
+
+section.services .service img {
+	width: 40px;
+	aspect-ratio: 1/1;
+}
+
+/* End Services */
 
 /* Start */
 /* End */
