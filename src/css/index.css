@@ -127,7 +127,7 @@ section.hero .row > :nth-child(2) {
 section.hero .img {
 	position: relative;
 	width: 200px;
-	height: 200px; 
+	height: 200px;
 	margin: 0 auto;
 	transform: translate(25%, 25%);
 }
@@ -204,6 +204,70 @@ section.services .service img {
 }
 
 /* End Services */
+
+/* Start works */
+
+section.works .work {
+	position: relative;
+}
+
+section.works .work .img img {
+	width: 100%;
+	aspect-ratio: 1.5/1;
+	filter: grayscale(1);
+	transition: all 1s ease;
+}
+
+section.works .work:hover .img img {
+	filter: grayscale(0);
+}
+
+section.works .work .links {
+	position: absolute;
+	background-color: var(--bgColor);
+	width: 100px;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+section.works .work .links .link {
+	position: absolute;
+	background-color: var(--bgColor);
+	width: 100%;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	transition: all 1s ease;
+}
+
+section.works .work .links .link.site {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+section.works .work .links .link.site a {
+	color: var(--primaryColor);
+	font-size: 2.5em;
+}
+
+section.works .work .links:hover .link.repo {
+	margin-top: -16px;
+	margin-left: -16px;
+}
+
+section.works .work .links:hover .link.repo:hover {
+	z-index: 5;
+}
+
+section.works .work .links:hover .link.site {
+	margin-top: 16px;
+	margin-left: 16px;
+}
+
+/* End works*/
 
 /* Start */
 /* End */
