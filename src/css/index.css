@@ -127,9 +127,8 @@ section.hero .row > :nth-child(2) {
 section.hero .img {
 	position: relative;
 	width: 200px;
-	height: 200px;
-	top: 0;
-	right: -25%;
+	height: 200px; 
+	margin: 0 auto;
 	transform: translate(25%, 25%);
 }
 
