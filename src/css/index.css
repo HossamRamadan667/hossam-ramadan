@@ -31,7 +31,7 @@ p {
 	color: var(--textColor);
 }
 
-section {
+section,footer {
 	margin-block: 3em;
 }
 
@@ -75,6 +75,10 @@ section {
 .sectionTitle.center::after {
 	left: 50%;
 	transform: translate(-50%, 0%);
+}
+
+.sectionTitle.left {
+	text-align: start;
 }
 
 .sectionTitle.left::after {
@@ -269,6 +273,23 @@ section.works .work .links:hover .link.site {
 
 /* End works*/
 
-/* Start */
-/* End */
+/* Start footer*/
+footer .social i {
+	font-size: 2.5em;
+}
+
+footer .social .fa-facebook {
+	color: #4267b2;
+}
+
+footer .social .fa-instagram {
+	color: white;
+	background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+	border-radius: 9px;
+}
+
+footer .social .fa-github {
+	color: #6e5494;
+}
+/* End footer*/
 
